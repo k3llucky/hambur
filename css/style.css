@@ -1,7 +1,42 @@
-#kitty{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
-    left: 0;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'intro intro'
+    'bread protein toppings'
+    'images images'
+
+
+}
+
+
+.bread {
+    grid-area: bread;
+}
+
+
+.protein {
+    grid-area: protein;
+} 
+
+.toppings {
+    grid-area: toppings;
+}
+
+
+.images {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: images;  
+}
+
+img { 
+    width:auto;
+    height: 150px;
+
 }
